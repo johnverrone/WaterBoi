@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD58306E23045FA60091E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58306D23045FA60091E74D /* AppDelegate.swift */; };
+		AD58307023045FA60091E74D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58306F23045FA60091E74D /* ViewController.swift */; };
+		AD58307323045FA60091E74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58307123045FA60091E74D /* Main.storyboard */; };
+		AD58307523045FA70091E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58307423045FA70091E74D /* Assets.xcassets */; };
+		AD58307823045FA70091E74D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58307623045FA70091E74D /* LaunchScreen.storyboard */; };
+		AD58307D23045FA70091E74D /* WaterBoi WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AD58307C23045FA70091E74D /* WaterBoi WatchKit App.app */; };
+		AD58308323045FA70091E74D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58308123045FA70091E74D /* Interface.storyboard */; };
+		AD58308523045FA70091E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58308423045FA70091E74D /* Assets.xcassets */; };
+		AD58308C23045FA80091E74D /* WaterBoi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD58308B23045FA80091E74D /* WaterBoi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD58309123045FA80091E74D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58309023045FA80091E74D /* InterfaceController.swift */; };
+		AD58309323045FA80091E74D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58309223045FA80091E74D /* ExtensionDelegate.swift */; };
+		AD58309523045FA80091E74D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58309423045FA80091E74D /* NotificationController.swift */; };
+		AD58309723045FA80091E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58309623045FA80091E74D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD58307E23045FA70091E74D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD58306223045FA60091E74D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD58307B23045FA70091E74D;
+			remoteInfo = "WaterBoi WatchKit App";
+		};
+		AD58308D23045FA80091E74D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD58306223045FA60091E74D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD58308A23045FA80091E74D;
+			remoteInfo = "WaterBoi WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD58309F23045FA80091E74D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AD58308C23045FA80091E74D /* WaterBoi WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5830A323045FA80091E74D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AD58307D23045FA70091E74D /* WaterBoi WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AD58306A23045FA60091E74D /* WaterBoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterBoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD58306D23045FA60091E74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD58306F23045FA60091E74D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD58307223045FA60091E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD58307423045FA70091E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD58307723045FA70091E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD58307923045FA70091E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD58307C23045FA70091E74D /* WaterBoi WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterBoi WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD58308223045FA70091E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AD58308423045FA70091E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD58308623045FA70091E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD58308B23045FA80091E74D /* WaterBoi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WaterBoi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD58309023045FA80091E74D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AD58309223045FA80091E74D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AD58309423045FA80091E74D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AD58309623045FA80091E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD58309823045FA80091E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD58309923045FA80091E74D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD58306723045FA60091E74D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD58308823045FA80091E74D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD58306123045FA60091E74D = {
+			isa = PBXGroup;
+			children = (
+				AD58306C23045FA60091E74D /* WaterBoi */,
+				AD58308023045FA70091E74D /* WaterBoi WatchKit App */,
+				AD58308F23045FA80091E74D /* WaterBoi WatchKit Extension */,
+				AD58306B23045FA60091E74D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD58306B23045FA60091E74D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD58306A23045FA60091E74D /* WaterBoi.app */,
+				AD58307C23045FA70091E74D /* WaterBoi WatchKit App.app */,
+				AD58308B23045FA80091E74D /* WaterBoi WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD58306C23045FA60091E74D /* WaterBoi */ = {
+			isa = PBXGroup;
+			children = (
+				AD58306D23045FA60091E74D /* AppDelegate.swift */,
+				AD58306F23045FA60091E74D /* ViewController.swift */,
+				AD58307123045FA60091E74D /* Main.storyboard */,
+				AD58307423045FA70091E74D /* Assets.xcassets */,
+				AD58307623045FA70091E74D /* LaunchScreen.storyboard */,
+				AD58307923045FA70091E74D /* Info.plist */,
+			);
+			path = WaterBoi;
+			sourceTree = "<group>";
+		};
+		AD58308023045FA70091E74D /* WaterBoi WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AD58308123045FA70091E74D /* Interface.storyboard */,
+				AD58308423045FA70091E74D /* Assets.xcassets */,
+				AD58308623045FA70091E74D /* Info.plist */,
+			);
+			path = "WaterBoi WatchKit App";
+			sourceTree = "<group>";
+		};
+		AD58308F23045FA80091E74D /* WaterBoi WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD58309023045FA80091E74D /* InterfaceController.swift */,
+				AD58309223045FA80091E74D /* ExtensionDelegate.swift */,
+				AD58309423045FA80091E74D /* NotificationController.swift */,
+				AD58309623045FA80091E74D /* Assets.xcassets */,
+				AD58309823045FA80091E74D /* Info.plist */,
+				AD58309923045FA80091E74D /* PushNotificationPayload.apns */,
+			);
+			path = "WaterBoi WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD58306923045FA60091E74D /* WaterBoi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5830A423045FA80091E74D /* Build configuration list for PBXNativeTarget "WaterBoi" */;
+			buildPhases = (
+				AD58306623045FA60091E74D /* Sources */,
+				AD58306723045FA60091E74D /* Frameworks */,
+				AD58306823045FA60091E74D /* Resources */,
+				AD5830A323045FA80091E74D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD58307F23045FA70091E74D /* PBXTargetDependency */,
+			);
+			name = WaterBoi;
+			productName = WaterBoi;
+			productReference = AD58306A23045FA60091E74D /* WaterBoi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD58307B23045FA70091E74D /* WaterBoi WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5830A023045FA80091E74D /* Build configuration list for PBXNativeTarget "WaterBoi WatchKit App" */;
+			buildPhases = (
+				AD58307A23045FA70091E74D /* Resources */,
+				AD58309F23045FA80091E74D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD58308E23045FA80091E74D /* PBXTargetDependency */,
+			);
+			name = "WaterBoi WatchKit App";
+			productName = "WaterBoi WatchKit App";
+			productReference = AD58307C23045FA70091E74D /* WaterBoi WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AD58308A23045FA80091E74D /* WaterBoi WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD58309C23045FA80091E74D /* Build configuration list for PBXNativeTarget "WaterBoi WatchKit Extension" */;
+			buildPhases = (
+				AD58308723045FA80091E74D /* Sources */,
+				AD58308823045FA80091E74D /* Frameworks */,
+				AD58308923045FA80091E74D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaterBoi WatchKit Extension";
+			productName = "WaterBoi WatchKit Extension";
+			productReference = AD58308B23045FA80091E74D /* WaterBoi WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD58306223045FA60091E74D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "John Verrone";
+				TargetAttributes = {
+					AD58306923045FA60091E74D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					AD58307B23045FA70091E74D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					AD58308A23045FA80091E74D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = AD58306523045FA60091E74D /* Build configuration list for PBXProject "WaterBoi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD58306123045FA60091E74D;
+			productRefGroup = AD58306B23045FA60091E74D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD58306923045FA60091E74D /* WaterBoi */,
+				AD58307B23045FA70091E74D /* WaterBoi WatchKit App */,
+				AD58308A23045FA80091E74D /* WaterBoi WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD58306823045FA60091E74D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD58307823045FA70091E74D /* LaunchScreen.storyboard in Resources */,
+				AD58307523045FA70091E74D /* Assets.xcassets in Resources */,
+				AD58307323045FA60091E74D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD58307A23045FA70091E74D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD58308523045FA70091E74D /* Assets.xcassets in Resources */,
+				AD58308323045FA70091E74D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD58308923045FA80091E74D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD58309723045FA80091E74D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD58306623045FA60091E74D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD58307023045FA60091E74D /* ViewController.swift in Sources */,
+				AD58306E23045FA60091E74D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD58308723045FA80091E74D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD58309523045FA80091E74D /* NotificationController.swift in Sources */,
+				AD58309323045FA80091E74D /* ExtensionDelegate.swift in Sources */,
+				AD58309123045FA80091E74D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD58307F23045FA70091E74D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD58307B23045FA70091E74D /* WaterBoi WatchKit App */;
+			targetProxy = AD58307E23045FA70091E74D /* PBXContainerItemProxy */;
+		};
+		AD58308E23045FA80091E74D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD58308A23045FA80091E74D /* WaterBoi WatchKit Extension */;
+			targetProxy = AD58308D23045FA80091E74D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD58307123045FA60091E74D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD58307223045FA60091E74D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD58307623045FA70091E74D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD58307723045FA70091E74D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AD58308123045FA70091E74D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD58308223045FA70091E74D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD58309A23045FA80091E74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD58309B23045FA80091E74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD58309D23045FA80091E74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3K4H376V;
+				INFOPLIST_FILE = "WaterBoi WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnverrone.WaterBoi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		AD58309E23045FA80091E74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3K4H376V;
+				INFOPLIST_FILE = "WaterBoi WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnverrone.WaterBoi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
+		AD5830A123045FA80091E74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3K4H376V;
+				IBSC_MODULE = WaterBoi_WatchKit_Extension;
+				INFOPLIST_FILE = "WaterBoi WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnverrone.WaterBoi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		AD5830A223045FA80091E74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3K4H376V;
+				IBSC_MODULE = WaterBoi_WatchKit_Extension;
+				INFOPLIST_FILE = "WaterBoi WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnverrone.WaterBoi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
+		AD5830A523045FA80091E74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3K4H376V;
+				INFOPLIST_FILE = WaterBoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnverrone.WaterBoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD5830A623045FA80091E74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3K4H376V;
+				INFOPLIST_FILE = WaterBoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnverrone.WaterBoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD58306523045FA60091E74D /* Build configuration list for PBXProject "WaterBoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD58309A23045FA80091E74D /* Debug */,
+				AD58309B23045FA80091E74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD58309C23045FA80091E74D /* Build configuration list for PBXNativeTarget "WaterBoi WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD58309D23045FA80091E74D /* Debug */,
+				AD58309E23045FA80091E74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5830A023045FA80091E74D /* Build configuration list for PBXNativeTarget "WaterBoi WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5830A123045FA80091E74D /* Debug */,
+				AD5830A223045FA80091E74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5830A423045FA80091E74D /* Build configuration list for PBXNativeTarget "WaterBoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5830A523045FA80091E74D /* Debug */,
+				AD5830A623045FA80091E74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD58306223045FA60091E74D /* Project object */;
+}
