@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0FB87823047CEA007C0795 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0FB87723047CEA007C0795 /* Water.swift */; };
+		AD0FB87923047CEA007C0795 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0FB87723047CEA007C0795 /* Water.swift */; };
+		AD0FB87B23047F51007C0795 /* WaterBoiInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0FB87A23047F51007C0795 /* WaterBoiInterfaceController.swift */; };
 		AD58306E23045FA60091E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58306D23045FA60091E74D /* AppDelegate.swift */; };
-		AD58307023045FA60091E74D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58306F23045FA60091E74D /* ViewController.swift */; };
+		AD58307023045FA60091E74D /* WaterBoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58306F23045FA60091E74D /* WaterBoiViewController.swift */; };
 		AD58307323045FA60091E74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58307123045FA60091E74D /* Main.storyboard */; };
 		AD58307523045FA70091E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58307423045FA70091E74D /* Assets.xcassets */; };
 		AD58307823045FA70091E74D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58307623045FA70091E74D /* LaunchScreen.storyboard */; };
@@ -16,9 +19,7 @@
 		AD58308323045FA70091E74D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58308123045FA70091E74D /* Interface.storyboard */; };
 		AD58308523045FA70091E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58308423045FA70091E74D /* Assets.xcassets */; };
 		AD58308C23045FA80091E74D /* WaterBoi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD58308B23045FA80091E74D /* WaterBoi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AD58309123045FA80091E74D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58309023045FA80091E74D /* InterfaceController.swift */; };
 		AD58309323045FA80091E74D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58309223045FA80091E74D /* ExtensionDelegate.swift */; };
-		AD58309523045FA80091E74D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58309423045FA80091E74D /* NotificationController.swift */; };
 		AD58309723045FA80091E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58309623045FA80091E74D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -65,9 +66,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD0FB87723047CEA007C0795 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
+		AD0FB87A23047F51007C0795 /* WaterBoiInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBoiInterfaceController.swift; sourceTree = "<group>"; };
 		AD58306A23045FA60091E74D /* WaterBoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterBoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD58306D23045FA60091E74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD58306F23045FA60091E74D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD58306F23045FA60091E74D /* WaterBoiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBoiViewController.swift; sourceTree = "<group>"; };
 		AD58307223045FA60091E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD58307423045FA70091E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD58307723045FA70091E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,12 +80,9 @@
 		AD58308423045FA70091E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD58308623045FA70091E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD58308B23045FA80091E74D /* WaterBoi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WaterBoi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD58309023045FA80091E74D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		AD58309223045FA80091E74D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		AD58309423045FA80091E74D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		AD58309623045FA80091E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD58309823045FA80091E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD58309923045FA80091E74D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +103,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0FB87623047CB1007C0795 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AD0FB87723047CEA007C0795 /* Water.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		AD58306123045FA60091E74D = {
 			isa = PBXGroup;
 			children = (
+				AD0FB87623047CB1007C0795 /* Shared */,
 				AD58306C23045FA60091E74D /* WaterBoi */,
 				AD58308023045FA70091E74D /* WaterBoi WatchKit App */,
 				AD58308F23045FA80091E74D /* WaterBoi WatchKit Extension */,
@@ -127,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				AD58306D23045FA60091E74D /* AppDelegate.swift */,
-				AD58306F23045FA60091E74D /* ViewController.swift */,
+				AD58306F23045FA60091E74D /* WaterBoiViewController.swift */,
 				AD58307123045FA60091E74D /* Main.storyboard */,
 				AD58307423045FA70091E74D /* Assets.xcassets */,
 				AD58307623045FA70091E74D /* LaunchScreen.storyboard */,
@@ -149,12 +158,10 @@
 		AD58308F23045FA80091E74D /* WaterBoi WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				AD58309023045FA80091E74D /* InterfaceController.swift */,
+				AD0FB87A23047F51007C0795 /* WaterBoiInterfaceController.swift */,
 				AD58309223045FA80091E74D /* ExtensionDelegate.swift */,
-				AD58309423045FA80091E74D /* NotificationController.swift */,
 				AD58309623045FA80091E74D /* Assets.xcassets */,
 				AD58309823045FA80091E74D /* Info.plist */,
-				AD58309923045FA80091E74D /* PushNotificationPayload.apns */,
 			);
 			path = "WaterBoi WatchKit Extension";
 			sourceTree = "<group>";
@@ -291,7 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD58307023045FA60091E74D /* ViewController.swift in Sources */,
+				AD58307023045FA60091E74D /* WaterBoiViewController.swift in Sources */,
+				AD0FB87823047CEA007C0795 /* Water.swift in Sources */,
 				AD58306E23045FA60091E74D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD58309523045FA80091E74D /* NotificationController.swift in Sources */,
 				AD58309323045FA80091E74D /* ExtensionDelegate.swift in Sources */,
-				AD58309123045FA80091E74D /* InterfaceController.swift in Sources */,
+				AD0FB87923047CEA007C0795 /* Water.swift in Sources */,
+				AD0FB87B23047F51007C0795 /* WaterBoiInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
