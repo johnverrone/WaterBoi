@@ -14,37 +14,51 @@ class WaterBoiInterfaceController: WKInterfaceController {
 
     @IBOutlet var currentWaterLabel: WKInterfaceLabel!
     @IBOutlet var progressLabel: WKInterfaceLabel!
-    @IBOutlet var waterGoal: WKInterfaceLabel!
+    @IBOutlet var waterGoalLabel: WKInterfaceLabel!
     
-    var water: Water? {
+    
+    var currentWater: Int = 0 {
         didSet {
-            guard let water = water else { return }
-            print("updated value of water \(water.currentWater) \(water.waterGoal)")
-            currentWaterLabel.setText("\(water.currentWater)")
-            progressLabel.setText("\(water.progress)")
-            waterGoal.setText("\(water.waterGoal)")
+            currentWaterLabel.setText(String(currentWater))
+            let progress = 100 * (Double(currentWater) / Double(waterGoal))
+            progressLabel.setText(String(format: "%.0f", progress))
+        }
+    }
+    var waterGoal: Int = 100 {
+        didSet {
+            waterGoalLabel.setText(String(waterGoal))
+            let progress = 100 * (Double(currentWater) / Double(waterGoal))
+            progressLabel.setText(String(format: "%.0f", progress))
         }
     }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        currentWater = 0
+        waterGoal = 150
         
-        water = Water(waterGoal: 100)
+        NotificationCenter.default.addObserver(self, selector: #selector(addOunces), name: .didChooseOtherValue, object: nil)
+    }
+    
+    @objc func addOunces(_ notification: Notification) {
+        if let data = notification.userInfo as? [String: Int] {
+            if let amount = data["amount"] {
+                currentWater += amount
+            }
+        }
+        
     }
     
     @IBAction func add8Ounces() {
-        print("The value of water is: \(water ?? nil)")
-        if let water = water {
-            print("water is not nil")
-            water.currentWater += 8
-        }
-        print(water?.currentWater)
+        currentWater += 8
     }
 
     @IBAction func add16Ounces() {
-        if let water = water {
-            water.currentWater += 16
-        }
+        currentWater += 16
     }
     
+}
+
+extension Notification.Name {
+    static let didChooseOtherValue = Notification.Name("didChooseOtherValue")
 }

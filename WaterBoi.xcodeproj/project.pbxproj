@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D3E2AC230CDC6F00908DA3 /* OtherAmountInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3E2AB230CDC6F00908DA3 /* OtherAmountInterfaceController.swift */; };
 		AD0FB87823047CEA007C0795 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0FB87723047CEA007C0795 /* Water.swift */; };
 		AD0FB87923047CEA007C0795 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0FB87723047CEA007C0795 /* Water.swift */; };
 		AD0FB87B23047F51007C0795 /* WaterBoiInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0FB87A23047F51007C0795 /* WaterBoiInterfaceController.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52D3E2AB230CDC6F00908DA3 /* OtherAmountInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherAmountInterfaceController.swift; sourceTree = "<group>"; };
 		AD0FB87723047CEA007C0795 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		AD0FB87A23047F51007C0795 /* WaterBoiInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBoiInterfaceController.swift; sourceTree = "<group>"; };
 		AD58306A23045FA60091E74D /* WaterBoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterBoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				AD0FB87A23047F51007C0795 /* WaterBoiInterfaceController.swift */,
+				52D3E2AB230CDC6F00908DA3 /* OtherAmountInterfaceController.swift */,
 				AD58309223045FA80091E74D /* ExtensionDelegate.swift */,
 				AD58309623045FA80091E74D /* Assets.xcassets */,
 				AD58309823045FA80091E74D /* Info.plist */,
@@ -310,6 +313,7 @@
 			files = (
 				AD58309323045FA80091E74D /* ExtensionDelegate.swift in Sources */,
 				AD0FB87923047CEA007C0795 /* Water.swift in Sources */,
+				52D3E2AC230CDC6F00908DA3 /* OtherAmountInterfaceController.swift in Sources */,
 				AD0FB87B23047F51007C0795 /* WaterBoiInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +495,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Debug;
 		};
@@ -513,7 +517,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Release;
 		};
@@ -532,7 +536,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Debug;
 		};
@@ -551,7 +555,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Release;
 		};

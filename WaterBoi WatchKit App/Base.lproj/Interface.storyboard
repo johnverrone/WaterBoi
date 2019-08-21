@@ -54,15 +54,48 @@
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
                         </group>
+                        <button width="1" alignment="left" title="Other Amount" id="9V1-Ta-Olk">
+                            <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.48145869006849318" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="fOf-Km-rhE" kind="modal" id="L1I-YA-flf"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="currentWaterLabel" destination="cFh-ld-0oy" id="60w-Dz-iVg"/>
                         <outlet property="progressLabel" destination="m1B-B6-AYy" id="a9b-td-eMl"/>
-                        <outlet property="waterGoal" destination="9PD-Z2-uOx" id="rUe-bx-m2l"/>
+                        <outlet property="waterGoalLabel" destination="9PD-Z2-uOx" id="17x-La-Ln3"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219.69230769230771" y="344.79487179487182"/>
+            <point key="canvasLocation" x="156" y="389"/>
+        </scene>
+        <!--OtherAmountInterface-->
+        <scene sceneID="bpY-7B-Nz6">
+            <objects>
+                <controller identifier="OtherAmountInterface" id="fOf-Km-rhE" customClass="OtherAmountInterfaceController" customModule="WaterBoi_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="0" textAlignment="center" id="qWs-sD-i4n">
+                            <fontDescription key="font" type="system" pointSize="60"/>
+                        </label>
+                        <slider width="1" alignment="left" maximum="100" steps="100" id="86C-Dd-4NS">
+                            <connections>
+                                <action selector="valueSliderChanged:" destination="fOf-Km-rhE" id="2A4-nD-xwP"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Done" id="fOz-8x-jfb">
+                            <connections>
+                                <action selector="done" destination="fOf-Km-rhE" id="56Y-Lq-P5R"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="valueLabel" destination="qWs-sD-i4n" id="I41-iK-3pq"/>
+                        <outlet property="valueSlider" destination="86C-Dd-4NS" id="zT8-wd-6l3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="388" y="388"/>
         </scene>
     </scenes>
 </document>
